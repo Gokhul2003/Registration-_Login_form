@@ -58,11 +58,6 @@
 </head>
 <body>
     <div class="main">
-        <div class="lab">
-            <a href="Clickjacking.html" target="_blank" style="color: black;"> Go To ANOTHER PAGE</a>
-        </div>
-        <p>ORIGINAL WEBPAGE</p>
-        <h1>ClickJacking Login Example</h1>
         <h3>Enter your login credentials</h3>
         <form id="loginForm">
             <label for="first">Username:</label>
@@ -72,7 +67,7 @@
             <div class="wrap">
                 <br>
                 <button type="submit">Submit</button>
-                <button id="clickjacking" type="reset">Delete</button>
+                <button id="delete" type="reset">Delete</button>
             </div>
         </form>
         <p>Not registered?
@@ -114,7 +109,7 @@
                 }
             });
 
-            document.getElementById('clickjacking').addEventListener('click', function() {
+            document.getElementById('delete').addEventListener('click', function() {
                 alert('OPPS!! Account Deleted!');
             });
         </script>
